@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Neural Network</title>
+        <meta name="Author" content="AboWarda">
+        <link rel="stylesheet" href="/style.css">
+        <style>
+        body{
+           background-color: #333;
+           margin: 0;
+        } 
+        </style>
+    </head>
+    <body>
+        <canvas id="gameCanvas" height="300"></canvas>
+        <canvas id="networkCanvas" height="400"></canvas>
+        <script>
+            let gameSpeed = 7;
+            let distenceBetweenEnemys = 650; 
+            const playerOffset = 100;
+            const playerWidth = 30;
+            const canvas = document.querySelector("#gameCanvas");
+            canvas.width = window.innerWidth;
+            const ctx = canvas.getContext("2d");
+            const networkCanvas = document.querySelector("#networkCanvas");
+            const nctx = networkCanvas.getContext("2d");
+            networkCanvas.width = window.innerWidth;
+
+        </script>
+        <script type="text/javascript" src="keyboard.js"></script>
+        <script type="text/javascript" src="network.js"></script>
+        <script type="text/javascript" src="sensor.js"></script>
+        <script type="text/javascript" src="enemy.js"></script>
+        <script type="text/javascript" src="player.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html> 
